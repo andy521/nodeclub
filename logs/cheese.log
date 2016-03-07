@@ -1,0 +1,119 @@
+[2016-03-07 10:11:27.669] [INFO] cheese - NodeClub listening on port 3000
+[2016-03-07 10:11:27.671] [INFO] cheese - God bless love....
+[2016-03-07 10:11:27.672] [INFO] cheese - You can debug your app with http://localhost:3000
+[2016-03-07 10:11:27.672] [INFO] cheese - 
+[2016-03-07 10:11:35.998] [INFO] cheese - 
+
+Started 2016-03-07T02:11:35.998Z GET / ::1
+[2016-03-07 10:11:36.393] [DEBUG] cheese - Cache set {"deleted":false}pages [32m0ms[39m
+[2016-03-07 10:11:36.854] [DEBUG] cheese - [35mMONGO[39m users.[34mfind[39m {"conditions":{"is_block":false},"options":{"limit":10,"sort":{"score":-1}},"collectionName":"users"} [32m535ms[39m
+[2016-03-07 10:11:36.855] [DEBUG] cheese - Cache set tops [32m0ms[39m
+[2016-03-07 10:11:36.856] [DEBUG] cheese - [35mMONGO[39m topics.[34mfind[39m {"conditions":{"deleted":false,"tab":{"$ne":"job"},"reply_count":0},"options":{"limit":5,"sort":{"create_at":-1},"fields":{}},"collectionName":"topics"} [32m536ms[39m
+[2016-03-07 10:11:36.856] [DEBUG] cheese - [35mMONGO[39m topics.[34mfind[39m {"conditions":{"deleted":false},"options":{"skip":0,"limit":20,"sort":{"top":-1,"last_reply_at":-1},"fields":{}},"collectionName":"topics"} [32m842ms[39m
+[2016-03-07 10:11:36.857] [DEBUG] cheese - Cache set no_reply_topics [32m0ms[39m
+[2016-03-07 10:11:37.241] [INFO] cheese - Render view index [32m(384ms)[39m
+[2016-03-07 10:11:37.245] [INFO] cheese - Completed 200 [32m(1247ms)[39m
+[2016-03-07 10:11:48.601] [INFO] cheese - 
+
+Started 2016-03-07T02:11:48.601Z GET /?tab=good ::1
+[2016-03-07 10:11:48.604] [DEBUG] cheese - Cache get tops [32m1ms[39m
+[2016-03-07 10:11:48.605] [DEBUG] cheese - Cache get no_reply_topics [32m2ms[39m
+[2016-03-07 10:11:48.607] [DEBUG] cheese - [35mMONGO[39m topics.[34mfind[39m {"conditions":{"deleted":false,"good":true},"options":{"skip":0,"limit":20,"sort":{"top":-1,"last_reply_at":-1},"fields":{}},"collectionName":"topics"} [32m3ms[39m
+[2016-03-07 10:11:48.607] [DEBUG] cheese - Cache set {"good":true,"deleted":false}pages [32m0ms[39m
+[2016-03-07 10:11:48.615] [INFO] cheese - Render view index [32m(7ms)[39m
+[2016-03-07 10:11:48.616] [INFO] cheese - Completed 200 [32m(15ms)[39m
+[2016-03-07 10:11:50.010] [INFO] cheese - 
+
+Started 2016-03-07T02:11:50.010Z GET /?tab=share ::1
+[2016-03-07 10:11:50.014] [DEBUG] cheese - Cache get tops [32m1ms[39m
+[2016-03-07 10:11:50.014] [DEBUG] cheese - Cache get no_reply_topics [32m1ms[39m
+[2016-03-07 10:11:50.016] [DEBUG] cheese - [35mMONGO[39m topics.[34mfind[39m {"conditions":{"deleted":false,"tab":"share"},"options":{"skip":0,"limit":20,"sort":{"top":-1,"last_reply_at":-1},"fields":{}},"collectionName":"topics"} [32m3ms[39m
+[2016-03-07 10:11:50.017] [DEBUG] cheese - Cache set {"tab":"share","deleted":false}pages [32m0ms[39m
+[2016-03-07 10:11:50.022] [INFO] cheese - Render view index [32m(4ms)[39m
+[2016-03-07 10:11:50.024] [INFO] cheese - Completed 200 [32m(14ms)[39m
+[2016-03-07 10:11:50.897] [INFO] cheese - 
+
+Started 2016-03-07T02:11:50.897Z GET /?tab=ask ::1
+[2016-03-07 10:11:50.899] [DEBUG] cheese - Cache get tops [32m1ms[39m
+[2016-03-07 10:11:50.900] [DEBUG] cheese - Cache get no_reply_topics [32m2ms[39m
+[2016-03-07 10:11:50.901] [DEBUG] cheese - [35mMONGO[39m topics.[34mfind[39m {"conditions":{"deleted":false,"tab":"ask"},"options":{"skip":0,"limit":20,"sort":{"top":-1,"last_reply_at":-1},"fields":{}},"collectionName":"topics"} [32m1ms[39m
+[2016-03-07 10:11:50.901] [DEBUG] cheese - Cache set {"tab":"ask","deleted":false}pages [32m0ms[39m
+[2016-03-07 10:11:50.906] [INFO] cheese - Render view index [32m(4ms)[39m
+[2016-03-07 10:11:50.908] [INFO] cheese - Completed 200 [32m(11ms)[39m
+[2016-03-07 10:11:51.657] [INFO] cheese - 
+
+Started 2016-03-07T02:11:51.657Z GET /?tab=job ::1
+[2016-03-07 10:11:51.662] [DEBUG] cheese - Cache get tops [32m3ms[39m
+[2016-03-07 10:11:51.665] [DEBUG] cheese - Cache get no_reply_topics [32m6ms[39m
+[2016-03-07 10:11:51.665] [DEBUG] cheese - [35mMONGO[39m topics.[34mfind[39m {"conditions":{"deleted":false,"tab":"job"},"options":{"skip":0,"limit":20,"sort":{"top":-1,"last_reply_at":-1},"fields":{}},"collectionName":"topics"} [32m5ms[39m
+[2016-03-07 10:11:51.666] [DEBUG] cheese - Cache set {"tab":"job","deleted":false}pages [32m0ms[39m
+[2016-03-07 10:11:51.671] [INFO] cheese - Render view index [32m(5ms)[39m
+[2016-03-07 10:11:51.673] [INFO] cheese - Completed 200 [32m(16ms)[39m
+[2016-03-07 10:11:54.039] [INFO] cheese - 
+
+Started 2016-03-07T02:11:54.039Z GET /getstart ::1
+[2016-03-07 10:11:54.093] [INFO] cheese - Render view static/getstart [32m(52ms)[39m
+[2016-03-07 10:11:54.094] [INFO] cheese - Completed 200 [32m(55ms)[39m
+[2016-03-07 10:11:58.033] [INFO] cheese - 
+
+Started 2016-03-07T02:11:58.033Z GET /api ::1
+[2016-03-07 10:11:58.054] [INFO] cheese - Render view static/api [32m(19ms)[39m
+[2016-03-07 10:11:58.055] [INFO] cheese - Completed 200 [32m(22ms)[39m
+[2016-03-07 10:12:00.557] [INFO] cheese - 
+
+Started 2016-03-07T02:12:00.557Z GET /about ::1
+[2016-03-07 10:12:00.563] [INFO] cheese - Render view static/about [32m(5ms)[39m
+[2016-03-07 10:12:00.564] [INFO] cheese - Completed 200 [32m(7ms)[39m
+[2016-03-07 10:12:02.418] [INFO] cheese - 
+
+Started 2016-03-07T02:12:02.418Z GET /signup ::1
+[2016-03-07 10:12:02.426] [INFO] cheese - Render view sign/signup [32m(5ms)[39m
+[2016-03-07 10:12:02.427] [INFO] cheese - Completed 200 [32m(9ms)[39m
+[2016-03-07 10:12:05.366] [INFO] cheese - 
+
+Started 2016-03-07T02:12:05.366Z GET /auth/github ::1
+[2016-03-07 10:12:05.368] [INFO] cheese - Completed 200 [32m(2ms)[39m
+[2016-03-07 10:12:05.424] [INFO] cheese - 
+
+Started 2016-03-07T02:12:05.424Z GET /favicon.ico ::1
+[2016-03-07 10:12:05.428] [INFO] cheese - Completed 404 [32m(4ms)[39m
+[2016-03-07 10:14:09.889] [INFO] cheese - 
+
+Started 2016-03-07T02:14:09.889Z GET /signin ::1
+[2016-03-07 10:14:09.912] [INFO] cheese - Render view sign/signin [32m(21ms)[39m
+[2016-03-07 10:14:09.913] [INFO] cheese - Completed 200 [32m(24ms)[39m
+[2016-03-07 10:14:13.585] [INFO] cheese - 
+
+Started 2016-03-07T02:14:13.585Z GET /auth/github ::1
+[2016-03-07 10:14:13.586] [INFO] cheese - Completed 304 [32m(1ms)[39m
+[2016-03-07 10:15:43.747] [INFO] cheese - 
+
+Started 2016-03-07T02:15:43.747Z GET / ::1
+[2016-03-07 10:15:43.753] [DEBUG] cheese - [35mMONGO[39m topics.[34mfind[39m {"conditions":{"deleted":false},"options":{"skip":0,"limit":20,"sort":{"top":-1,"last_reply_at":-1},"fields":{}},"collectionName":"topics"} [32m3ms[39m
+[2016-03-07 10:15:43.753] [DEBUG] cheese - [35mMONGO[39m users.[34mfind[39m {"conditions":{"is_block":false},"options":{"limit":10,"sort":{"score":-1}},"collectionName":"users"} [32m1ms[39m
+[2016-03-07 10:15:43.754] [DEBUG] cheese - Cache set tops [32m0ms[39m
+[2016-03-07 10:15:43.757] [DEBUG] cheese - Cache set {"deleted":false}pages [32m1ms[39m
+[2016-03-07 10:15:43.757] [DEBUG] cheese - [35mMONGO[39m topics.[34mfind[39m {"conditions":{"deleted":false,"tab":{"$ne":"job"},"reply_count":0},"options":{"limit":5,"sort":{"create_at":-1},"fields":{}},"collectionName":"topics"} [32m5ms[39m
+[2016-03-07 10:15:43.758] [DEBUG] cheese - Cache set no_reply_topics [32m0ms[39m
+[2016-03-07 10:15:43.763] [INFO] cheese - Render view index [32m(5ms)[39m
+[2016-03-07 10:15:43.764] [INFO] cheese - Completed 304 [32m(17ms)[39m
+[2016-03-07 10:15:47.099] [INFO] cheese - 
+
+Started 2016-03-07T02:15:47.099Z GET /users/top100 ::1
+[2016-03-07 10:15:47.102] [DEBUG] cheese - [35mMONGO[39m users.[34mfind[39m {"conditions":{"is_block":false},"options":{"limit":100,"sort":{"score":-1}},"collectionName":"users"} [32m1ms[39m
+[2016-03-07 10:15:47.152] [INFO] cheese - Render view user/top100 [32m(49ms)[39m
+[2016-03-07 10:15:47.153] [INFO] cheese - Completed 200 [32m(54ms)[39m
+[2016-03-07 10:15:52.327] [INFO] cheese - 
+
+Started 2016-03-07T02:15:52.327Z GET /search?q=1 ::1
+[2016-03-07 10:15:52.331] [INFO] cheese - Completed 302 [32m(4ms)[39m
+[2016-03-07 10:16:10.858] [INFO] cheese - 
+
+Started 2016-03-07T02:16:10.858Z GET / ::1
+[2016-03-07 10:16:10.861] [DEBUG] cheese - Cache get tops [32m1ms[39m
+[2016-03-07 10:16:10.862] [DEBUG] cheese - Cache get no_reply_topics [32m2ms[39m
+[2016-03-07 10:16:10.862] [DEBUG] cheese - Cache get {"deleted":false}pages [32m2ms[39m
+[2016-03-07 10:16:10.863] [DEBUG] cheese - [35mMONGO[39m topics.[34mfind[39m {"conditions":{"deleted":false},"options":{"skip":0,"limit":20,"sort":{"top":-1,"last_reply_at":-1},"fields":{}},"collectionName":"topics"} [32m3ms[39m
+[2016-03-07 10:16:10.863] [DEBUG] cheese - Cache set {"deleted":false}pages [32m0ms[39m
+[2016-03-07 10:16:10.868] [INFO] cheese - Render view index [32m(4ms)[39m
+[2016-03-07 10:16:10.869] [INFO] cheese - Completed 304 [32m(11ms)[39m
