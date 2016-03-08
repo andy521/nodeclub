@@ -117,3 +117,62 @@ Started 2016-03-07T02:16:10.858Z GET / ::1
 [2016-03-07 10:16:10.863] [DEBUG] cheese - Cache set {"deleted":false}pages [32m0ms[39m
 [2016-03-07 10:16:10.868] [INFO] cheese - Render view index [32m(4ms)[39m
 [2016-03-07 10:16:10.869] [INFO] cheese - Completed 304 [32m(11ms)[39m
+[2016-03-07 11:02:32.542] [INFO] cheese - NodeClub listening on port 3000
+[2016-03-07 11:02:32.545] [INFO] cheese - God bless love....
+[2016-03-07 11:02:32.546] [INFO] cheese - You can debug your app with http://localhost:3000
+[2016-03-07 11:02:32.546] [INFO] cheese - 
+[2016-03-07 11:02:35.179] [INFO] cheese - 
+
+Started 2016-03-07T03:02:35.178Z GET /signup ::1
+[2016-03-07 11:02:35.202] [INFO] cheese - Render view sign/signup [32m(15ms)[39m
+[2016-03-07 11:02:35.205] [INFO] cheese - Completed 200 [32m(27ms)[39m
+[2016-03-07 11:02:51.965] [INFO] cheese - 
+
+Started 2016-03-07T03:02:51.965Z POST /signup ::1
+[2016-03-07 11:02:52.036] [DEBUG] cheese - [35mMONGO[39m users.[34mfind[39m {"conditions":{"$or":[{"loginname":"caiya"},{"email":"caiya928@aliyun.com"}]},"options":{},"collectionName":"users"} [32m36ms[39m
+[2016-03-07 11:02:52.320] [INFO] cheese - Render view sign/signup [32m(8ms)[39m
+[2016-03-07 11:02:52.322] [INFO] cheese - Completed 200 [32m(357ms)[39m
+[2016-03-07 11:03:22.186] [INFO] cheese - 
+
+Started 2016-03-07T03:03:22.186Z GET /signup ::1
+[2016-03-07 11:03:22.193] [INFO] cheese - Render view sign/signup [32m(6ms)[39m
+[2016-03-07 11:03:22.194] [INFO] cheese - Completed 200 [32m(8ms)[39m
+[2016-03-07 11:03:45.293] [INFO] cheese - 
+
+Started 2016-03-07T03:03:45.293Z POST /signup ::1
+[2016-03-07 11:03:45.297] [DEBUG] cheese - [35mMONGO[39m users.[34mfind[39m {"conditions":{"$or":[{"loginname":"caiya"},{"email":"caiya928@aliyun.com"}]},"options":{},"collectionName":"users"} [32m1ms[39m
+[2016-03-07 11:03:45.306] [INFO] cheese - Render view sign/signup [32m(6ms)[39m
+[2016-03-07 11:03:45.307] [INFO] cheese - Completed 422 [32m(14ms)[39m
+[2016-03-07 11:03:49.658] [INFO] cheese - 
+
+Started 2016-03-07T03:03:49.658Z GET /signin ::1
+[2016-03-07 11:03:49.673] [INFO] cheese - Render view sign/signin [32m(13ms)[39m
+[2016-03-07 11:03:49.675] [INFO] cheese - Completed 200 [32m(17ms)[39m
+[2016-03-07 11:03:54.063] [INFO] cheese - 
+
+Started 2016-03-07T03:03:54.063Z POST /signin ::1
+[2016-03-07 11:03:54.133] [DEBUG] cheese - [35mMONGO[39m users.[34mfindOne[39m {"conditions":{"loginname":"caiya"},"options":{},"collectionName":"users"} [32m67ms[39m
+[2016-03-07 11:03:54.347] [INFO] cheese - Render view sign/signin [32m(5ms)[39m
+[2016-03-07 11:03:54.348] [INFO] cheese - Completed 403 [32m(285ms)[39m
+[2016-03-07 11:05:22.587] [INFO] cheese - 
+
+Started 2016-03-07T03:05:22.587Z GET /signup ::1
+[2016-03-07 11:05:22.593] [INFO] cheese - Render view sign/signup [32m(4ms)[39m
+[2016-03-07 11:05:22.594] [INFO] cheese - Completed 304 [32m(7ms)[39m
+[2016-03-07 11:05:38.021] [INFO] cheese - 
+
+Started 2016-03-07T03:05:38.021Z POST /signup ::1
+[2016-03-07 11:05:38.024] [DEBUG] cheese - [35mMONGO[39m users.[34mfind[39m {"conditions":{"$or":[{"loginname":"caiya928"},{"email":"1419901425@qq.com"}]},"options":{},"collectionName":"users"} [32m0ms[39m
+[2016-03-07 11:05:38.242] [INFO] cheese - Render view sign/signup [32m(5ms)[39m
+[2016-03-07 11:05:38.244] [INFO] cheese - Completed 200 [32m(223ms)[39m
+[2016-03-07 11:20:17.293] [INFO] cheese - 
+
+Started 2016-03-07T03:20:17.293Z GET / ::1
+[2016-03-07 11:20:17.303] [DEBUG] cheese - [35mMONGO[39m topics.[34mfind[39m {"conditions":{"deleted":false},"options":{"skip":0,"limit":20,"sort":{"top":-1,"last_reply_at":-1},"fields":{}},"collectionName":"topics"} [32m4ms[39m
+[2016-03-07 11:20:17.344] [DEBUG] cheese - [35mMONGO[39m topics.[34mfind[39m {"conditions":{"deleted":false,"tab":{"$ne":"job"},"reply_count":0},"options":{"limit":5,"sort":{"create_at":-1},"fields":{}},"collectionName":"topics"} [32m43ms[39m
+[2016-03-07 11:20:17.346] [DEBUG] cheese - Cache set no_reply_topics [32m0ms[39m
+[2016-03-07 11:20:17.459] [DEBUG] cheese - Cache set {"deleted":false}pages [32m0ms[39m
+[2016-03-07 11:20:17.544] [DEBUG] cheese - [35mMONGO[39m users.[34mfind[39m {"conditions":{"is_block":false},"options":{"limit":10,"sort":{"score":-1}},"collectionName":"users"} [32m243ms[39m
+[2016-03-07 11:20:17.547] [DEBUG] cheese - Cache set tops [32m1ms[39m
+[2016-03-07 11:20:17.565] [INFO] cheese - Render view index [32m(18ms)[39m
+[2016-03-07 11:20:17.567] [INFO] cheese - Completed 200 [32m(274ms)[39m
